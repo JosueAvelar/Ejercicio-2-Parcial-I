@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Calculadora de Amortizacion</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="Resultado.php" method="POST">
+		<h1>Calculadora de Tabla de Amortizacion</h1>
+		<!-------------------------------------------------------------------------------------------------->
+		<p>Sistema de amortizacion:	
+			<select name="Sistema">
+				<option value="simple">Simple</option>
+				<option value="compuesto">Compuesto</option>
+			</select>
+		</p>
+		<!-------------------------------------------------------------------------------------------------->
+		<p>Fecha de desembolso: 
+			<input type="date" name="FechaDe" id="FechaDe">
+		</p>
+		<!-------------------------------------------------------------------------------------------------->
+		<p>Importe del préstamo:
+			<input type="number" name="Monto" id="Monto">
+		</p>
+		<!-------------------------------------------------------------------------------------------------->
+		<p>Periodo:
+			<select name="Periodo" id="Periodo">
+				<option value="Diario">Diario</option>
+				<option value="Semanal">Semanal</option>
+				<option value="Quincenal">Quincenal</option>
+				<option value="Mensual">Mensual</option>
+				<option value="Anual">Anual</option>
+			</select>
+		</p>
+		<!-------------------------------------------------------------------------------------------------->
+		<p>Interés diario:
+			<input type="number" name="InteresD" id="InteresD">%	
+		</p>
+		<!-------------------------------------------------------------------------------------------------->
+		<p>Plazo:
+			<input type="number" name="Plazo" id="Pazo"> días
+		</p>
+		<!-------------------------------------------------------------------------------------------------->
+		<input type="submit" name="enviar" id="enviar" value="Enviar">
+		<input type="reset" name="reset" id="reset" value="Reestablecer">
+		<!-------------------------------------------------------------------------------------------------->
+	</form>
+</body>
+</html>
